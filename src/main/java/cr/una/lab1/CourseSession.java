@@ -9,4 +9,15 @@ import java.util.Date;
  */
 public class CourseSession {
 
+    private String department;
+    private String code;
+    private date startDate;
+    private ArrayList<Student> students;
+    /**
+    * @param student
+    */
+    public void enrollStudent(Student student){
+
+    }
+
 }
