@@ -11,7 +11,7 @@ public class CourseSession {
 
     private String department;
     private String code;
-    private date startDate;
+    private Date startDate;
     private ArrayList<Student> students;
     /**
     * @param student
