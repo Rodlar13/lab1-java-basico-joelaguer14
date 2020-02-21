@@ -47,7 +47,8 @@ public class CourseSession {
     }
     public Date getEndDate(){
         Calendar calendar=Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_MONTH, 105);
+        calendar.setTime(startDate);
+        calendar.add(Calendar.DATE,105);
         return calendar.getTime();
     }
 
