@@ -43,11 +43,12 @@ public class CourseSession {
     * @param student
     */
     public void enrollStudent(Student student){
-
+        students.add(student);
     }
-    public void getEndDate(){
+    public Date getEndDate(){
         Calendar calendar=Calendar.getInstance();
-        calendar.set(startDate.);
+        calendar.add(Calendar.DAY_OF_MONTH, 105);
+        return calendar.getTime();
     }
 
     /**

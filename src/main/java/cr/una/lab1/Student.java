@@ -4,8 +4,13 @@ package cr.una.lab1;
  * Student Class
  */
 public class Student {
-
+    /**
+     *
+     */
     private String name;
+    /**
+     *
+     */
     private String lastName;
 
     /**
