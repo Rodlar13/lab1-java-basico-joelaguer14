@@ -9,6 +9,9 @@ import java.util.Date;
  */
 public class CourseSession {
 
+    private static int WEEKS_PER_PERIOD=16;
+    private static int DAYS_PER_WEEK=7;
+    private static int SUBSTRACTED_DAYS=7;
     /**
      *
      */
@@ -48,7 +51,8 @@ public class CourseSession {
     public Date getEndDate(){
         Calendar calendar=Calendar.getInstance();
         calendar.setTime(startDate);
-        calendar.add(Calendar.DATE,105);
+        int addDays=WEEKS_PER_PERIOD*DAYS_PER_WEEK-SUBSTRACTED_DAYS;
+        calendar.add(Calendar.DATE,addDays);
         return calendar.getTime();
     }
 
